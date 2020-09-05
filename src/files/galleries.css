@@ -1,0 +1,4 @@
+.wikia-gallery-item .gallery-image-wrapper {
+    background-color: rgb(var(--file-background));
+    border-color: rgb(var(--file-border));
+}

@@ -1,0 +1,9 @@
+.WikiaPage {
+    border: none;
+}
+
+.WikiaPage .WikiaPageBackground {
+    background: rgba(var(--default), .7);
+    opacity: 1;
+    margin: 0 -1px; /* Prostrats */
+}

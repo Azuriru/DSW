@@ -1,0 +1,77 @@
+/* Buttons */
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary),.wds-button:not(.wds-is-text):not(.wds-is-secondary) {
+    background-color: rgb(var(--button-default));
+    border-color: rgb(var(--button-default));
+    color: rgb(var(--button-text));
+}
+
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active,.wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active,.wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled)
+.wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
+    background-color: rgb(var(--button-hover));
+    border-color: rgb(var(--button-hover));
+}
+
+/** Secondary **/
+.WikiaPage .page-header .wds-button.wds-is-secondary,
+.WikiaRail .rail-module .wds-button.wds-is-secondary,
+.wds-button.wds-is-secondary {
+    border-color: rgb(var(--button-default));
+    color: rgb(var(--button-default));
+}
+
+.WikiaPage .page-header .wds-button.wds-is-secondary:focus:not(:disabled),
+.WikiaPage .page-header .wds-button.wds-is-secondary:hover:not(:disabled),
+.WikiaPage .page-header .wds-button.wds-is-secondary:active,
+.WikiaPage .page-header .wds-button.wds-is-secondary.wds-is-active,
+.WikiaRail .rail-module .wds-button.wds-is-secondary:focus:not(:disabled),
+.WikiaRail .rail-module .wds-button.wds-is-secondary:hover:not(:disabled),
+.WikiaRail .rail-module .wds-button.wds-is-secondary:active,
+.WikiaRail .rail-module .wds-button.wds-is-secondary.wds-is-active,
+.wds-button.wds-is-secondary:focus:not(:disabled),
+.wds-button.wds-is-secondary:hover:not(:disabled),
+.wds-button.wds-is-secondary:active,
+.wds-button.wds-is-secondary.wds-is-active {
+    border-color: rgb(var(--button-hover));
+    color: rgb(var(--button-hover));
+}
+
+/** Edit button **/
+.wds-button#ca-ve-edit {
+    position: relative;
+}
+
+.wds-button#ca-ve-edit::after {
+    content: '';
+    background: rgba(var(--monochrome-contrast), .5);
+    width: 1px;
+    margin: -1px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.wds-button#ca-ve-edit + .wds-dropdown {
+    position: relative;
+}
+
+/** Nitpicks, as usual really **/
+.WikiaPage .page-header .wds-button-group > .wds-button:not(.wds-is-secondary):not(:last-child),
+.WikiaPage .page-header .wds-button-group > .wds-dropdown:not(:first-child) .wds-button {
+    border-right: initial;
+    border-left: initial;
+}
+
+.wds-button-group > .wds-button {
+    margin: 0;
+}

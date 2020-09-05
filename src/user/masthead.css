@@ -1,0 +1,20 @@
+/* Masthead */
+.UserProfileMasthead .masthead-info {
+    box-shadow: none;
+    background: rgb(var(--masthead-body), .7);
+}
+
+.UserProfileMasthead .masthead-info hgroup {
+    background: rgb(var(--masthead-header), .7);
+}
+
+.UserProfileMasthead .masthead-info-lower:before {
+    border-color: rgb(var(--masthead-body), .7) rgb(var(--masthead-body), .7) transparent transparent;
+    left: -29px;
+}
+
+/* Avatar */
+.UserProfileMasthead .masthead-avatar .avatar {
+    border: 5px solid rgb(var(--masthead-avatar), .7);
+    border-radius: 50%;
+}

@@ -1,0 +1,5 @@
+.article-table, .WikiaTable {
+    background: transparent;
+    border-collapse: collapse;
+    border: none;
+}

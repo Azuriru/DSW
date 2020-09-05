@@ -1,0 +1,5 @@
+/* Fallback incase background hasn't loaded yet */
+body.skin-oasis.mediawiki {
+    background: rgb(var(--default));
+    color: rgb(var(--color-light));
+}

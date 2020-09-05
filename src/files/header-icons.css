@@ -1,0 +1,15 @@
+.WikiaPage :matches(
+    #Special_Power,
+    #Origin,
+    #Tips,
+    #Gallery,
+    #Sounds,
+    #Downloadable_Content,
+    #Bugs
+) img {
+    filter: drop-shadow(0 0 2px white);
+}
+
+.WikiaPage #Trivia img {
+    filter: invert(1);
+}

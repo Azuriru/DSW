@@ -1,0 +1,35 @@
+{
+    "name": "dsw",
+    "version": "0.0.1",
+    "description": "DSW theme for Dearu",
+    "main": "compiler.js",
+    "scripts": {
+        "build": "node compiler.js",
+        "watch": "nodemon --watch src -e css compiler.js"
+    },
+    "devDependencies": {
+        "@csstools/postcss-sass": "^4.0.0",
+        "autoprefixer": "^9.8.6",
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4",
+        "postcss-loader": "^3.0.0",
+        "postcss-selector-matches": "^4.0.0",
+        "recursive-readdir": "^2.2.2",
+        "sass": "^1.26.10"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GameModerator/DSW"
+    },
+    "keywords": [
+        "Don't",
+        "Starve",
+        "Together"
+    ],
+    "browserslist": [
+        "Safari 5.1",
+        "last 4 version"
+    ],
+    "author": "Robyn",
+    "license": "ISC"
+}

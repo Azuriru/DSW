@@ -1,0 +1,11 @@
+.WikiaPage .autocomment {
+    color: rgb(var(--color-medium));
+}
+
+.WikiaPage .mw-plusminus-pos {
+    color: #1bb776;
+}
+
+.WikiaPage .mw-plusminus-neg {
+    color: #ff5757;
+}

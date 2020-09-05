@@ -1,0 +1,39 @@
+/* Links */
+/** Simple is best, unfuckable- unfuck-up-able? **/
+a:not(.wds-button):not([id^="ca"]):not([data-tracking^="categories-top-more"]):not([data-tracking^="custom-level"]) {
+    color: rgb(var(--color-link));
+    text-shadow: var(--link-shadows);
+    text-decoration: none;
+}
+
+a:not(.wds-button):not([id^="ca"]):not([data-tracking^="categories-top-more"]):not([data-tracking^="custom-level"]):hover {
+    color: rgb(var(--color-link-hovered));
+    text-shadow: var(--link-shadows-hover);
+    text-decoration: none;
+    transition: var(--transition) linear;
+}
+
+/* Yeah uh, seems like too much work and I'm sure he won't mind much anyways. */
+/* I'll probably get teased though, a price I'm willing to pay */
+/* a:not(.wds-button):not([id]) {
+    color: rgb(var(--color-link));
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:not(.wds-button):not([id])::before {
+    background: rgb(var(--color-link));
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+
+a:hover::before {
+    width: 100%;
+} */

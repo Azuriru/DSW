@@ -1,0 +1,28 @@
+/* Categories */
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links {
+    margin-bottom: 10px;
+}
+
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links > a:last-child {
+    display: inline;
+}
+
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links > a:last-child,
+.WikiaPage .page-header__categories-dropdown {
+    padding: 0;
+}
+
+.WikiaPage .page-header__categories-dropdown {
+    transform: translateY(12px);
+}
+
+.WikiaPage .page-header__categories-dropdown .wds-dropdown__toggle {
+    top: -12px;
+}
+
+/** Bottom of the page **/
+.article-categories.CategorySelect.articlePage {
+    background: var(--category-background);
+    border-color: rgb(var(--category-border));
+    border-radius: 3px;
+}

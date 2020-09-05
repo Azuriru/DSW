@@ -1,0 +1,533 @@
+/* Fallback incase background hasn't loaded yet */
+body.skin-oasis.mediawiki {
+    background: rgb(var(--default));
+    color: rgb(var(--color-light));
+}
+
+:root {
+    /* Main background */
+    --background-image: url('https://vignette.wikia.nocookie.net/dont-starve-game/images/1/1f/Wigfrid_Loading_Screen.png/revision/latest');
+    --background-position: center;
+    --background-color: rgb(var(--default));
+    --background-brightness: brightness(.9);
+    --background-contrast: contrast(1.1);
+    --background-blur: blur(0);
+
+    --header-background: url('https://vignette.wikia.nocookie.net/dont-starve-game/images/5/5e/Wigfrid_Shadow_Skin_Portrait.png/revision/latest');
+
+    /* Main colors */
+    --default: 49, 23, 10;
+    --default-border: var(--darker);
+    --lightest: 70, 23, 0; /* Status */
+    --lighter: 82, 23, 0; /* Guild, tooltips */
+    --light: 50, 23, 0; /* Pins, userpopout */
+    --dark: 39, 23, 0; /* Search, settings */
+    --darker: 30, 23, 0;
+
+    /* Text colors */
+    --color-link: 255, 145, 107;
+    --color-link-dark: 234, 95, 47;
+    --color-link-hovered: 255, 187, 164;
+    --color-link-hovered-shadow: 234, 82, 29;
+    --color-mention: var(--color-link);
+    --color-lighter: 230, 230, 230;
+    --color-light: 200, 200, 200;
+    --color-medium: 169, 169, 169;
+    --color-dark: 220, 220, 220;
+    --color-darker: 150, 150, 150;
+    --color-darkest: 100, 100, 100;
+    --color-placeholder: 90, 90, 90;
+
+    /* Link shadows */
+    --link-shadows: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    --link-shadows-hover: 0 0 2.5px rgb(var(--color-link-hovered-shadow)), 0 0 2.5px rgb(var(--color-link-hovered-shadow));
+
+    /* Display settings */
+    --transition: .3s; /* Or 'none' if you don't want any animations */
+
+    /* Page */
+    /** Categories **/
+    --category-background: transparent;
+    --category-border: var(--color-link);
+
+    /* User */
+    /** Masthead **/
+    --masthead-header: var(--darker);
+    --masthead-body: var(--light);
+    --masthead-avatar: var(--light);
+
+    /** Tabs **/
+    --tab-background: var(--default);
+
+    /* Misc */
+    /* Bots */
+    --bot: var(--color-link);
+    --bot-text: var(--monochrome-contrast);
+
+    /* Buttons */
+    --button-default: var(--color-link);
+    --button-hover: var(--color-link-hovered);
+    --button-text: var(--monochrome-contrast);
+
+    /* Context Menu */
+    --context-menu: var(--darker);
+
+    /* Dropdowns */
+    --dropdown: 255, 177, 148;
+    --dropdown-color: 74, 74, 74;
+
+    /* Embeds */
+    --embed-wrapper: var(--dark);
+    --embed-wrapper-border: var(--darker);
+    --embed-pill-color: var(--darker);
+    --embed-icon: hue-rotate(140deg) saturate(200%);
+
+    /* Files */
+    --file-background: var(--color-link-dark);
+    --file-border: var(--color-link);
+
+    /* Inputs */
+    --input: var(--color-link-dark);
+    --input-border: var(--color-link);
+    --checkbox: var(--color-link);
+    --checkbox-border: var(--color-link);
+    --checkbox-stroke: var(--monochrome-contrast);
+    --slider-checked: var(--color-link);
+    --slider-unchecked: var(--lightest);
+
+    /* Jump tos */
+    --jumpto: var(--default);
+    --jumpto-hover: var(--light);
+
+    /* Markup */
+    --spoiler-hidden: var(--color-link-dark);
+    --spoiler-hidden-hover: var(--color-link-dark);
+    --spoiler: var(--color-link-dark);
+    --code: var(--light);
+    --code-border: var(--light);
+
+    /* Modals */
+    --modal-base: var(--light);
+    --modal-footer: var(--dark);
+    --uploadmodal-base: var(--light);
+    --uploadmodal-footer: var(--darker);
+    --modal-icon: hue-rotate(140deg) saturate(200%);
+
+    /* Scrollbar */
+    --scrollbar-track-piece: var(--default);
+    --scrollbar: transparent;
+
+    /* Search */
+    --searchbar: var(--dark);
+    --search-item: var(--dark);
+    --search-popout: var(--dark);
+    --search-popout-option: var(--default);
+
+    /* Tooltips */
+    --tooltips: var(--default);
+
+    /* Whatever big word but */
+    /* if (theme == light) { */
+    /*     this.value = black; */
+    /* else { */
+    /*     this.value = white; */
+    /* } */
+    --monochrome-contrast: 255, 255, 255;
+}
+
+.article-thumb .caption {
+    color: rgb(var(--color-darker));
+}
+
+.wikia-gallery-item .gallery-image-wrapper {
+    background-color: rgb(var(--file-background));
+    border-color: rgb(var(--file-border));
+}
+
+.WikiaPage #Special_Power img,
+.WikiaPage #Origin img,
+.WikiaPage #Tips img,
+.WikiaPage #Gallery img,
+.WikiaPage #Sounds img,
+.WikiaPage #Downloadable_Content img,
+.WikiaPage #Bugs img {
+    -webkit-filter: drop-shadow(0 0 2px white);
+            filter: drop-shadow(0 0 2px white);
+}
+
+.WikiaPage #Trivia img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+/* Categories */
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links {
+    margin-bottom: 10px;
+}
+
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links > a:last-child {
+    display: inline;
+}
+
+.WikiaPage .WikiaPageContentWrapper .page-header__categories-links > a:last-child,
+.WikiaPage .page-header__categories-dropdown {
+    padding: 0;
+}
+
+.WikiaPage .page-header__categories-dropdown {
+    -webkit-transform: translateY(12px);
+        -ms-transform: translateY(12px);
+            transform: translateY(12px);
+}
+
+.WikiaPage .page-header__categories-dropdown .wds-dropdown__toggle {
+    top: -12px;
+}
+
+/** Bottom of the page **/
+.article-categories.CategorySelect.articlePage {
+    background: var(--category-background);
+    border-color: rgb(var(--category-border));
+    border-radius: 3px;
+}
+
+.WikiaPage .page-header__title {
+    color: rgb(var(--color-light));
+}
+
+.WikiaPage {
+    border: none;
+}
+
+.WikiaPage .WikiaPageBackground {
+    background: rgba(var(--default), .7);
+    opacity: 1;
+    margin: 0 -1px; /* Prostrats */
+}
+
+.WikiaArticle .toc {
+    background-color: rgb(var(--color-link), .05);
+    border: 1px solid rgb(var(--color-link));
+    border-radius: 3px;
+}
+
+/* Buttons */
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary),.wds-button:not(.wds-is-text):not(.wds-is-secondary) {
+    background-color: rgb(var(--button-default));
+    border-color: rgb(var(--button-default));
+    color: rgb(var(--button-text));
+}
+
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.WikiaPage .page-header .wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active,.wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.WikiaRail .rail-module .wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active,.wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled)
+.wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled),
+.wds-button:not(.wds-is-text):not(.wds-is-secondary):active,
+.wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
+    background-color: rgb(var(--button-hover));
+    border-color: rgb(var(--button-hover));
+}
+
+/** Secondary **/
+.WikiaPage .page-header .wds-button.wds-is-secondary,
+.WikiaRail .rail-module .wds-button.wds-is-secondary,
+.wds-button.wds-is-secondary {
+    border-color: rgb(var(--button-default));
+    color: rgb(var(--button-default));
+}
+
+.WikiaPage .page-header .wds-button.wds-is-secondary:focus:not(:disabled),
+.WikiaPage .page-header .wds-button.wds-is-secondary:hover:not(:disabled),
+.WikiaPage .page-header .wds-button.wds-is-secondary:active,
+.WikiaPage .page-header .wds-button.wds-is-secondary.wds-is-active,
+.WikiaRail .rail-module .wds-button.wds-is-secondary:focus:not(:disabled),
+.WikiaRail .rail-module .wds-button.wds-is-secondary:hover:not(:disabled),
+.WikiaRail .rail-module .wds-button.wds-is-secondary:active,
+.WikiaRail .rail-module .wds-button.wds-is-secondary.wds-is-active,
+.wds-button.wds-is-secondary:focus:not(:disabled),
+.wds-button.wds-is-secondary:hover:not(:disabled),
+.wds-button.wds-is-secondary:active,
+.wds-button.wds-is-secondary.wds-is-active {
+    border-color: rgb(var(--button-hover));
+    color: rgb(var(--button-hover));
+}
+
+/** Edit button **/
+.wds-button#ca-ve-edit {
+    position: relative;
+}
+
+.wds-button#ca-ve-edit::after {
+    content: '';
+    background: rgba(var(--monochrome-contrast), .5);
+    width: 1px;
+    margin: -1px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.wds-button#ca-ve-edit + .wds-dropdown {
+    position: relative;
+}
+
+/** Nitpicks, as usual really **/
+.WikiaPage .page-header .wds-button-group > .wds-button:not(.wds-is-secondary):not(:last-child),
+.WikiaPage .page-header .wds-button-group > .wds-dropdown:not(:first-child) .wds-button {
+    border-right: initial;
+    border-left: initial;
+}
+
+.wds-button-group > .wds-button {
+    margin: 0;
+}
+
+/* Dropdowns */
+/** Triangle **/
+.WikiaPage .page-header .wds-dropdown::after,
+.wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::after,
+.wds-dropdown::after {
+    border-bottom-color: rgb(var(--dropdown));
+}
+
+/*** Triangle border but I'm nuking it because borders are so last season ***/
+.WikiaPage .page-header .wds-dropdown::before,
+.wds-dropdown::before,
+.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before,
+.wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::before {
+    display: none;
+}
+
+/** Content **/
+.WikiaPage .page-header .wds-dropdown__content,
+.wds-community-header .wds-dropdown__content,
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-level-2__content {
+    background: rgb(var(--dropdown));
+    border: none;
+    color: rgb(var(--dropdown-color));
+}
+
+.WikiaPage .page-header .wds-dropdown__content .wds-list.wds-is-linked li > a,
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked li > a {
+    color: inherit;
+}
+
+.WikiaPage .page-header .wds-dropdown__content .wds-list.wds-is-linked li:hover > a:not(.wds-button),
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked li:hover > a:not(.wds-button) {
+    background-color: rgb(var(--color-link-dark), .25);
+    color: rgb(var(--color-link-hovered-shadow));
+}
+
+/* The fuck? */
+.WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list,
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list,
+.WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after, .WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::before {
+    background: transparent;
+}
+
+
+
+/* Masthead */
+.UserProfileMasthead .masthead-info {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: rgb(var(--masthead-body), .7);
+}
+
+.UserProfileMasthead .masthead-info hgroup {
+    background: rgb(var(--masthead-header), .7);
+}
+
+.UserProfileMasthead .masthead-info-lower:before {
+    border-color: rgb(var(--masthead-body), .7) rgb(var(--masthead-body), .7) transparent transparent;
+    left: -29px;
+}
+
+/* Avatar */
+.UserProfileMasthead .masthead-avatar .avatar {
+    border: 5px solid rgb(var(--masthead-avatar), .7);
+    border-radius: 50%;
+}
+
+.tabs-container .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    border: none;
+    background: rgba(var(--light), .6);
+}
+
+.tabs-container .tabs li {
+    float: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tabs-container .tabs li.selected a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(var(--dark), .6);
+    border: none;
+    border-radius: 0;
+    padding: 0 14px;
+}
+
+/* Background */
+body.background-dynamic.skin-oasis.mediawiki::before {
+    content: '';
+    background: var(--background-color) var(--background-image) var(--background-position) / cover no-repeat fixed;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: initial;
+    height: initial;
+    margin: 0;
+    z-index: 0;
+    -webkit-filter: var(--background-brightness) var(--background-contrast) var(--background-blur);
+            filter: var(--background-brightness) var(--background-contrast) var(--background-blur);
+}
+
+/** Reset **/
+body.background-dynamic.skin-oasis.mediawiki::after {
+    content: '';
+    background: transparent;
+    height: initial;
+    position: static;
+    width: initial;
+    height: initial;
+}
+
+@media only screen and (max-width: 1083px) {
+    body.skin-oasis::after,
+    body.skin-oasis::before {
+        display: block
+    }
+
+    body.skin-oasis .background-image-gradient {
+        display: none
+    }
+}
+
+/** No, fuck you **/
+body.skin-oasis .background-image-gradient {
+    display: none;
+}
+
+.wds-community-header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(var(--default), .9)), to(rgba(var(--default), .7)));
+    background: -o-linear-gradient(top, rgba(var(--default), .9), rgba(var(--default), .7));
+    background: linear-gradient(to bottom, rgba(var(--default), .9), rgba(var(--default), .7));
+}
+
+.wds-community-header::before {
+    background: transparent;
+}
+
+/* Links */
+/** Simple is best, unfuckable- unfuck-up-able? **/
+a:not(.wds-button):not([id^="ca"]):not([data-tracking^="categories-top-more"]):not([data-tracking^="custom-level"]) {
+    color: rgb(var(--color-link));
+    text-shadow: var(--link-shadows);
+    text-decoration: none;
+}
+
+a:not(.wds-button):not([id^="ca"]):not([data-tracking^="categories-top-more"]):not([data-tracking^="custom-level"]):hover {
+    color: rgb(var(--color-link-hovered));
+    text-shadow: var(--link-shadows-hover);
+    text-decoration: none;
+    -webkit-transition: var(--transition) linear;
+    -o-transition: var(--transition) linear;
+    transition: var(--transition) linear;
+}
+
+/* Yeah uh, seems like too much work and I'm sure he won't mind much anyways. */
+/* I'll probably get teased though, a price I'm willing to pay */
+/* a:not(.wds-button):not([id]) {
+    color: rgb(var(--color-link));
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:not(.wds-button):not([id])::before {
+    background: rgb(var(--color-link));
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+
+a:hover::before {
+    width: 100%;
+} */
+
+.WikiaPage .autocomment {
+    color: rgb(var(--color-medium));
+}
+
+.WikiaPage .mw-plusminus-pos {
+    color: #1bb776;
+}
+
+.WikiaPage .mw-plusminus-neg {
+    color: #ff5757;
+}
+
+#WikiaBar .WikiaBarWrapper {
+    background: rgb(var(--darker));
+}
+
+.article-table, .WikiaTable {
+    background: transparent;
+    border-collapse: collapse;
+    border: none;
+}
+
+/* TD */
+/** Headers **/
+.WikiaPage table td[style*="#B8939F"],
+.WikiaTable td[style*="#B8939F"] {
+    background: rgb(var(--darker), .6) !important;
+}
+
+/** For data on the left side **/
+.WikiaPage table td[style*="#EDEBDC"],
+.WikiaTable td[style*="#EDEBDC"] {
+    background: rgb(var(--light), .5) !important;
+}
+
+.article-table th,
+.WikiaTable th {
+    background: white;
+    text-align: left;
+}
+
+.WikiaRail .rail-module .has-icon svg {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+.WikiaRail .rail-module .activity-items .activity-item .edit-info,
+.WikiaRail .rail-module .activity-items .activity-item .edit-info-user {
+    color: rgb(var(--color-light))
+}

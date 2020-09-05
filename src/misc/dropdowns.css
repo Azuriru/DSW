@@ -1,0 +1,42 @@
+/* Dropdowns */
+/** Triangle **/
+.WikiaPage .page-header .wds-dropdown::after,
+.wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::after,
+.wds-dropdown::after {
+    border-bottom-color: rgb(var(--dropdown));
+}
+
+/*** Triangle border but I'm nuking it because borders are so last season ***/
+.WikiaPage .page-header .wds-dropdown::before,
+.wds-dropdown::before,
+.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before,
+.wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::before {
+    display: none;
+}
+
+/** Content **/
+.WikiaPage .page-header .wds-dropdown__content,
+.wds-community-header .wds-dropdown__content,
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-level-2__content {
+    background: rgb(var(--dropdown));
+    border: none;
+    color: rgb(var(--dropdown-color));
+}
+
+.WikiaPage .page-header .wds-dropdown__content .wds-list.wds-is-linked li > a,
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked li > a {
+    color: inherit;
+}
+
+.WikiaPage .page-header .wds-dropdown__content .wds-list.wds-is-linked li:hover > a:not(.wds-button),
+.wds-community-header .wds-dropdown__content .wds-list.wds-is-linked li:hover > a:not(.wds-button) {
+    background-color: rgb(var(--color-link-dark), .25);
+    color: rgb(var(--color-link-hovered-shadow));
+}
+
+/* The fuck? */
+.WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list,
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list,
+.WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after, .WikiaPage .page-header .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::before {
+    background: transparent;
+}

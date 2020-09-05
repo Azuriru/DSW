@@ -1,0 +1,41 @@
+/* Background */
+body.background-dynamic.skin-oasis.mediawiki::before {
+    content: '';
+    background: var(--background-color) var(--background-image) var(--background-position) / cover no-repeat fixed;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: initial;
+    height: initial;
+    margin: 0;
+    z-index: 0;
+    filter: var(--background-brightness) var(--background-contrast) var(--background-blur);
+}
+
+/** Reset **/
+body.background-dynamic.skin-oasis.mediawiki::after {
+    content: '';
+    background: transparent;
+    height: initial;
+    position: static;
+    width: initial;
+    height: initial;
+}
+
+@media only screen and (max-width: 1083px) {
+    body.skin-oasis::after,
+    body.skin-oasis::before {
+        display: block
+    }
+
+    body.skin-oasis .background-image-gradient {
+        display: none
+    }
+}
+
+/** No, fuck you **/
+body.skin-oasis .background-image-gradient {
+    display: none;
+}

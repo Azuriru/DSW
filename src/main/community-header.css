@@ -1,0 +1,7 @@
+.wds-community-header {
+    background: linear-gradient(to bottom, rgba(var(--default), .9), rgba(var(--default), .7));
+}
+
+.wds-community-header::before {
+    background: transparent;
+}

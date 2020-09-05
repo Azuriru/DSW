@@ -1,0 +1,8 @@
+.WikiaRail .rail-module .has-icon svg {
+    filter: invert(1);
+}
+
+.WikiaRail .rail-module .activity-items .activity-item .edit-info,
+.WikiaRail .rail-module .activity-items .activity-item .edit-info-user {
+    color: rgb(var(--color-light))
+}

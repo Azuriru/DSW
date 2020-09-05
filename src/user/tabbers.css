@@ -1,0 +1,21 @@
+.tabs-container .tabs {
+    display: flex;
+    padding: 0;
+    border: none;
+    background: rgba(var(--light), .6);
+}
+
+.tabs-container .tabs li {
+    float: none;
+    margin: 0;
+    display: flex;
+}
+
+.tabs-container .tabs li.selected a {
+    display: flex;
+    align-items: center;
+    background: rgba(var(--dark), .6);
+    border: none;
+    border-radius: 0;
+    padding: 0 14px;
+}

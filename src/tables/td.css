@@ -1,0 +1,12 @@
+/* TD */
+/** Headers **/
+.WikiaPage table td[style*="#B8939F"],
+.WikiaTable td[style*="#B8939F"] {
+    background: rgb(var(--darker), .6) !important;
+}
+
+/** For data on the left side **/
+.WikiaPage table td[style*="#EDEBDC"],
+.WikiaTable td[style*="#EDEBDC"] {
+    background: rgb(var(--light), .5) !important;
+}

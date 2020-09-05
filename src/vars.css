@@ -1,0 +1,130 @@
+:root {
+    /* Main background */
+    --background-image: url('https://vignette.wikia.nocookie.net/dont-starve-game/images/1/1f/Wigfrid_Loading_Screen.png/revision/latest');
+    --background-position: center;
+    --background-color: rgb(var(--default));
+    --background-brightness: brightness(.9);
+    --background-contrast: contrast(1.1);
+    --background-blur: blur(0);
+
+    --header-background: url('https://vignette.wikia.nocookie.net/dont-starve-game/images/5/5e/Wigfrid_Shadow_Skin_Portrait.png/revision/latest');
+
+    /* Main colors */
+    --default: 49, 23, 10;
+    --default-border: var(--darker);
+    --lightest: 70, 23, 0; /* Status */
+    --lighter: 82, 23, 0; /* Guild, tooltips */
+    --light: 50, 23, 0; /* Pins, userpopout */
+    --dark: 39, 23, 0; /* Search, settings */
+    --darker: 30, 23, 0;
+
+    /* Text colors */
+    --color-link: 255, 145, 107;
+    --color-link-dark: 234, 95, 47;
+    --color-link-hovered: 255, 187, 164;
+    --color-link-hovered-shadow: 234, 82, 29;
+    --color-mention: var(--color-link);
+    --color-lighter: 230, 230, 230;
+    --color-light: 200, 200, 200;
+    --color-medium: 169, 169, 169;
+    --color-dark: 220, 220, 220;
+    --color-darker: 150, 150, 150;
+    --color-darkest: 100, 100, 100;
+    --color-placeholder: 90, 90, 90;
+
+    /* Link shadows */
+    --link-shadows: 0 -15px 2.5px transparent, 0 15px 2.5px transparent;
+    --link-shadows-hover: 0 0 2.5px rgb(var(--color-link-hovered-shadow)), 0 0 2.5px rgb(var(--color-link-hovered-shadow));
+
+    /* Display settings */
+    --transition: .3s; /* Or 'none' if you don't want any animations */
+
+    /* Page */
+    /** Categories **/
+    --category-background: transparent;
+    --category-border: var(--color-link);
+
+    /* User */
+    /** Masthead **/
+    --masthead-header: var(--darker);
+    --masthead-body: var(--light);
+    --masthead-avatar: var(--light);
+
+    /** Tabs **/
+    --tab-background: var(--default);
+
+    /* Misc */
+    /* Bots */
+    --bot: var(--color-link);
+    --bot-text: var(--monochrome-contrast);
+
+    /* Buttons */
+    --button-default: var(--color-link);
+    --button-hover: var(--color-link-hovered);
+    --button-text: var(--monochrome-contrast);
+
+    /* Context Menu */
+    --context-menu: var(--darker);
+
+    /* Dropdowns */
+    --dropdown: 255, 177, 148;
+    --dropdown-color: 74, 74, 74;
+
+    /* Embeds */
+    --embed-wrapper: var(--dark);
+    --embed-wrapper-border: var(--darker);
+    --embed-pill-color: var(--darker);
+    --embed-icon: hue-rotate(140deg) saturate(200%);
+
+    /* Files */
+    --file-background: var(--color-link-dark);
+    --file-border: var(--color-link);
+
+    /* Inputs */
+    --input: var(--color-link-dark);
+    --input-border: var(--color-link);
+    --checkbox: var(--color-link);
+    --checkbox-border: var(--color-link);
+    --checkbox-stroke: var(--monochrome-contrast);
+    --slider-checked: var(--color-link);
+    --slider-unchecked: var(--lightest);
+
+    /* Jump tos */
+    --jumpto: var(--default);
+    --jumpto-hover: var(--light);
+
+    /* Markup */
+    --spoiler-hidden: var(--color-link-dark);
+    --spoiler-hidden-hover: var(--color-link-dark);
+    --spoiler: var(--color-link-dark);
+    --code: var(--light);
+    --code-border: var(--light);
+
+    /* Modals */
+    --modal-base: var(--light);
+    --modal-footer: var(--dark);
+    --uploadmodal-base: var(--light);
+    --uploadmodal-footer: var(--darker);
+    --modal-icon: hue-rotate(140deg) saturate(200%);
+
+    /* Scrollbar */
+    --scrollbar-track-piece: var(--default);
+    --scrollbar: transparent;
+
+    /* Search */
+    --searchbar: var(--dark);
+    --search-item: var(--dark);
+    --search-popout: var(--dark);
+    --search-popout-option: var(--default);
+
+    /* Tooltips */
+    --tooltips: var(--default);
+
+    /* Whatever big word but */
+    /* if (theme == light) { */
+    /*     this.value = black; */
+    /* else { */
+    /*     this.value = white; */
+    /* } */
+    --monochrome-contrast: 255, 255, 255;
+}
